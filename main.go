@@ -27,7 +27,7 @@ func getEnv(key, fallback string) string {
 func indexHandler(w http.ResponseWriter, r *http.Request) {
 	// Write this clever message to w, which implements
 	// the Writer interface https://golang.org/pkg/io/#Writer
-	fmt.Fprintf(w, "Hellow MGT656/660 FTW!@$#")
+	fmt.Fprintf(w, "Hello MGT656/660 FTW!@$#")
 }
 
 //func indexnicknamehandler(w http.ResponseWriter, r *http.Request) {
