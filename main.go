@@ -30,17 +30,16 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Hellow MGT656/660 FTW!@$#")
 }
 
-func indexnicknamehandler(w http.ResponseWriter, r *http.Request) {
+//func indexnicknamehandler(w http.ResponseWriter, r *http.Request) {
 	// Write this clever message to w, which implements
 	// the Writer interface https://golang.org/pkg/io/#Writer
-	fmt.Fprintf(w, "Cloudy-Niks")
-}
-
+//	fmt.Fprintf(w, "Cloudy-Niks")
+//
 func main() {
 	// Say that when we receive a request for the '/' (or "root") URL
 	// we want the function `indexHandler` to handle it.
 	http.HandleFunc("/", indexHandler)
-	http.HandleFunc("/nick-name", indexnicknamehandler)
+	//http.HandleFunc("/nick-name", indexnicknamehandler)
 
 	// Start listening for HTTP requests.
 	http.ListenAndServe(":"+getEnv("PORT", "8080"), nil)
