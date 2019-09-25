@@ -33,7 +33,7 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 func indexnicknamehandler(w http.ResponseWriter, r *http.Request) {
 	// Write this clever message to w, which implements
 	// the Writer interface https://golang.org/pkg/io/#Writer
-	fmt.Fprintf(w, "nick-name")
+	fmt.Fprintf(w, "Cloudy-Niks")
 }
 
 func main() {
