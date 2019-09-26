@@ -27,7 +27,11 @@ func getEnv(key, fallback string) string {
 func indexHandler(w http.ResponseWriter, r *http.Request) {
 	// Write this clever message to w, which implements
 	// the Writer interface https://golang.org/pkg/io/#Writer
+<<<<<<< HEAD
 	fmt.Fprintf(w, "Hello Class")
+=======
+	fmt.Fprintf(w, "Hellohibye MGT656/660 FTW!@$#")
+>>>>>>> 32e891a8022c51849243d41a7a0a9cce27336aaa
 }
 
 func nickNameHandler(w http.ResponseWriter, r *http.Request) {
